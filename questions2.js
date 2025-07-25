@@ -1,4 +1,5 @@
- {
+[
+{
     "id": 1,
     "subject": 2,
     "chapter": 1,
