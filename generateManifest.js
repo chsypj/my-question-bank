@@ -17,9 +17,9 @@ const subjects = [
 ];
 
 // 定义题库文件所在的目录路径
-const dataDirectory = path.join(__dirname, 'miniprogram', 'data');
+const dataDirectory = __dirname;
 // 定义 manifest.json 文件最终要生成的位置
-const manifestFilePath = path.join(dataDirectory, 'manifest.json');
+const manifestFilePath = path.join(__dirname, 'manifest.json');
 // --- 配置区结束 ---
 
 // 初始化清单对象结构
