@@ -1,0 +1,25 @@
+{
+  "totalQuestions": 1641,
+  "subjects": [
+    {
+      "id": 1,
+      "name": "法律法规",
+      "count": 1
+    },
+    {
+      "id": 2,
+      "name": "综合知识",
+      "count": 1638
+    },
+    {
+      "id": 3,
+      "name": "专业实务",
+      "count": 1
+    },
+    {
+      "id": 4,
+      "name": "案例分析",
+      "count": 1
+    }
+  ]
+}
