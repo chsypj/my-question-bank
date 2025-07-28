@@ -16,7 +16,7 @@ jobs:
     # 运行此任务的虚拟机环境
     runs-on: ubuntu-latest
 
-    # 新增：为机器人授予写入仓库的权限
+    # 为机器人授予写入仓库的权限
     permissions:
       contents: write
 
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 步骤2：设置 Node.js 环境，我们使用 16.x 版本
+      # 步骤2：设置 Node.js 环境
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -48,8 +48,6 @@ jobs:
           git add .
           
           # 检查暂存区是否有变动
-          # "git diff --staged --quiet" 如果没有变动，会退出码为0；有变动则为1
-          # "||" 符号表示如果前一个命令失败（即有变动），则执行后面的命令
           git diff --staged --quiet || (
             git commit -m "docs: auto-generate manifest.json" &&
             git push
