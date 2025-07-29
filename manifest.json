@@ -1,6 +1,6 @@
 {
-  "version": 1753719712365,
-  "totalQuestions": 2491,
+  "version": 1753767679128,
+  "totalQuestions": 2492,
   "subjects": [
     {
       "id": 1,
@@ -20,7 +20,7 @@
     {
       "id": 4,
       "name": "案例分析",
-      "count": 1
+      "count": 2
     }
   ]
 }
